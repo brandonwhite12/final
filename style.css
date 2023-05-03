@@ -1,21 +1,22 @@
-/* Global styles */
-
 /* Box sizing */
 * {
   box-sizing: border-box;
 }
 
-/* Import the font */
+/* Import the font from GoogleAPI */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+/* Body */
 body {
-  background-color: #f2f2f2;
+  background-color: lightgray;
   margin: 0;
   padding: 0;
   font-family: 'Space Mono', monospace;
+  text-align: center;
+  height: 100%;
 }
 
-/* Header styles */
+/* Header */
 header {
   background-color: #333;
   color: #fff;
@@ -23,6 +24,7 @@ header {
   text-align: center;
 }
 
+/* Large header */
 header h1 {
   margin: 5px;
   margin-top: 20px;
@@ -52,12 +54,12 @@ nav a {
   text-decoration: none;
 }
 
-/* Main content styles */
+/* Main content */
 main {
   padding: 20px;
 }
 
-/* Footer styles */
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
@@ -65,9 +67,6 @@ footer {
   text-align: center;
 }
 
-/* Page-specific styles */
-
-/* Home page styles */
 .home-banner {
   background-image: url('banner.jpg');
   background-size: cover;
@@ -94,7 +93,6 @@ footer {
   font-size: 18px;
 }
 
-/* Destinations page styles */
 .destinations-header {
   background-image: url('destinations-header.jpg');
   background-size: cover;
@@ -157,12 +155,14 @@ footer {
   text-shadow: 1px 1px #000;
 }
 
+/* Blog list */
 .blog-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+/* Blog card */
 .blog-card {
   width: 300px;
   margin: 20px;
@@ -171,12 +171,65 @@ footer {
   overflow: hidden;
 }
 
+/* Blog card image */
 .blog-card img {
   width:
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* HTML Body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Intro Paragraph text */
+.intro p {
+  text-align: center;
+}
+
+/* Intro header 2 */
+.intro h2 {
+  font-size: 2rem;
+}
+
+/* Preview resizing */
+.post-preview {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Structural responsive site style data */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  header nav li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Latest posts responsive data */
+.latest-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Preview  */
+.post-preview {
+  width: 100%;
+  margin-bottom: 2rem;
+}

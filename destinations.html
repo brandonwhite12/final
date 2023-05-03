@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Destinations</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPr0-B44VpDySPZPCqy7byPkGr20dOSvk"></script>
-        <script src="map.js"></script>
+        <script src="javascript.js"></script>
     </head>
     <body>
         <header>
@@ -22,22 +21,21 @@
         </header>
         <main>
             <section>
-                <div id="map"></div>
-                <h1>Destinations</h1>
-                <p>Explore our top destinations:</p>
-                <ul>
-                    <li><a href="https://www.gohawaii.com/">Hawaii</a></li>
-                    <img src="images/hawaii.jpg" alt="Hawaii" style="width: 25%"/>
-                    
-                    <li><a href="https://www.caribbeanislands.com/">Caribbean</a></li>
-                    <img src="images/caribbean.jpg" alt="Caribbean" style="width: 25%"/>
-                    
-                    <li><a href="https://www.explore-europe.de/">Europe</a></li>
-                    <img src="images/europe.jpg" alt="Europe" style="width: 25%"/>
-                    
-                    <li><a href="https://southamericatourism.com/">South America</a></li>
-                    <img src="images/south-america.jpg" alt="South America" style="width: 25%"/>
-                </ul>
+                <div>
+                    <h1>Destinations</h1>
+                    <p>Explore our top destinations:</p>
+                        <li><a href="https://www.gohawaii.com/" onclick="hawaii()">Hawaii</a></li>
+                        <img src="images/hawaii.jpg" alt="Hawaii" style="width: 25%"/>
+
+                        <li><a href="https://www.caribbeanislands.com/" onclick="carribean()">Caribbean</a></li>
+                        <img src="images/caribbean.jpg" alt="Caribbean" style="width: 25%"/>
+
+                        <li><a href="https://www.explore-europe.de/" onclick="europe()">Europe</a></li>
+                        <img src="images/europe.jpg" alt="Europe" style="width: 25%"/>
+
+                        <li><a href="https://southamericatourism.com/" onclick="southAmerica()">South America</a></li>
+                        <img src="images/south-america.jpg" alt="South America" style="width: 25%"/>
+                </div>
             </section>
         </main>
         <footer>
