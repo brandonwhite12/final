@@ -67,6 +67,10 @@ footer {
   text-align: center;
 }
 
+footer a {
+    color: white;
+}
+
 .home-banner {
   background-image: url('banner.jpg');
   background-size: cover;
